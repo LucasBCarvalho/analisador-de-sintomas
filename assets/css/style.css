@@ -9,8 +9,11 @@ body {
     background-color: var(--background-color);
     font-family: Arial, sans-serif;
     padding: 0;
-    margin: 50px 0 0;
-    background: linear-gradient(to top, var(--primary-color), rgb(0, 255, 34));
+    margin: 70px 0 0;
+    background-image: url('/assets/imgs/Fundo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    /*background: linear-gradient(to top, var(--primary-color), rgb(0, 255, 34));*/
 }
     
 .container {
