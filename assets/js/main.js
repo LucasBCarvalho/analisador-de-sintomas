@@ -58,12 +58,12 @@ function calcularPontuacaoAIDS(selectedSymptoms) {
 }
 
 function calcularPontuacaoTuberculose(selectedSymptoms) {
-    var symptomsToCheck = [1,2,3,9, 13, 14, 15];
+    var symptomsToCheck = [1,2,3,7,9, 14, 15];
     return calcularPontuacao(selectedSymptoms, symptomsToCheck);
 }
 
 function calcularPontuacaoMalaria(selectedSymptoms) {
-    var symptomsToCheck = [2,17,18,19,20, 21, 22];
+    var symptomsToCheck = [2,3,17,18,19, 21, 22];
     return calcularPontuacao(selectedSymptoms, symptomsToCheck);
 }
 
