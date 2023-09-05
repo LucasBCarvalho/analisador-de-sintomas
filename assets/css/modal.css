@@ -43,10 +43,10 @@
     .modal {
         position: fixed;
         top: 15rem;
-        left: 0px;
+        left: 10px;
         justify-content: center;
         align-items: center;
-        width: 95%; 
+        width: 80%; 
         max-width: 95%;
     }
 }
