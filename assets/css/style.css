@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #4C8A41;
+    --secondary-color: #7FAD5C;
+    --background-color: #f0f0f0;
+    --container-background: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 50px 0 0;
+    background-size: cover; 
+    background-image: url('/assets/imgs/Fundo.jpg'); 
+    background-attachment: fixed; 
+}
+    
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--container-background);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+    
+.container p{
+        color: var(--primary-color);
+}
+    
+    
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+    
+.symptom-group {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+}
+    
+    
+.column {
+    flex: 1; 
+    padding: 20px; 
+}
+    
+    
+.column:nth-child(odd) {
+    background-color: #f7f7f7; 
+}
+    
+.column:nth-child(even) {
+    background-color: #f7f7f7; 
+}
+    
+.column label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+}
+    
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+    
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+    
+button:hover {
+        background-color: var(--primary-color);
+}
+    
+#resultado {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: var(--container-background);
+        border-radius: 10px;
+        box-shadow: 0 0 2.5px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-top: 20px; 
+        margin-bottom: 20px;
+}
+#resultado ul {
+        list-style-type: disc;
+        padding-left: 20px;
+}
+    
+ #resultado ul li {
+        margin-bottom: 10px;
+}
+    
+#resultado h2 {
+        color: var(--primary-color);
+        margin-top: 20px;
+}
+    
+@media (max-width: 768px) {
+    .symptom-group {
+        flex-direction: column; 
+    }
+    
+    .column {
+        width: 100%; 
+        }
+}
+    
