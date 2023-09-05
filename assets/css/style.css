@@ -10,9 +10,7 @@ body {
     font-family: Arial, sans-serif;
     padding: 0;
     margin: 50px 0 0;
-    background-size: cover; 
-    background-image: url('/assets/imgs/Fundo.jpg'); 
-    background-attachment: fixed; 
+    background: linear-gradient(to top, var(--primary-color), rgb(0, 255, 34));
 }
     
 .container {
