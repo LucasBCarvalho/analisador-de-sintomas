@@ -9,7 +9,10 @@ body {
     background-color: var(--background-color);
     font-family: Arial, sans-serif;
     padding: 0;
-    margin: 50px 0 0;
+    margin: 70px 0 0;
+    background-image: url('/assets/imgs/Fundo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
     
 .container {
@@ -107,6 +110,23 @@ button:hover {
         margin-top: 20px;
 }
     
+/* Largura máxima de 976px */
+@media (max-width: 976px) {
+    .symptom-group {
+        flex-direction: column; 
+    }
+    
+    .column {
+        width: 90%; 
+    }
+    
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Largura máxima de 768px */
 @media (max-width: 768px) {
     .symptom-group {
         flex-direction: column; 
@@ -117,7 +137,23 @@ button:hover {
     }
     
     .container {
-        max-width: 350px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Largura máxima de 600px */
+@media (max-width: 600px) {
+    .symptom-group {
+        flex-direction: column; 
+    }
+    
+    .column {
+        width: 90%; 
+    }
+    
+    .container {
+        max-width: 90%;
         margin: 0 auto;
     }
 }

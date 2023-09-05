@@ -1,8 +1,11 @@
 .overlay {
     display: none;
     position: fixed;
-    top: 20rem;
-    left: 45rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
 }
@@ -12,9 +15,13 @@
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
     text-align: center;
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 80%;
 }
 
 .close-button {
@@ -27,26 +34,21 @@
     right: 10px;
 }
 
+/* Configurações de responsividade */
 @media (max-width: 768px) {
     .modal {
-        position: fixed;
-        top: 15rem;
-        left: 0px;
-        justify-content: center;
-        align-items: center;
-        width: 95%; 
-        max-width: 95%;
+        width: 90%;
     }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 414px) {
     .modal {
-        position: fixed;
-        top: 15rem;
-        left: 10px;
-        justify-content: center;
-        align-items: center;
-        width: 80%; 
-        max-width: 95%;
+        width: 95%;
+    }
+}
+
+@media (max-width: 375px) {
+    .modal {
+        width: 95%;
     }
 }
