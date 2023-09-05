@@ -27,9 +27,25 @@
     right: 10px;
 }
 
-
 @media (max-width: 768px) {
     .modal {
+        position: fixed;
+        top: 15rem;
+        left: 0px;
+        justify-content: center;
+        align-items: center;
+        width: 95%; 
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 468px) {
+    .modal {
+        position: fixed;
+        top: 15rem;
+        left: 0px;
+        justify-content: center;
+        align-items: center;
         width: 95%; 
         max-width: 95%;
     }
